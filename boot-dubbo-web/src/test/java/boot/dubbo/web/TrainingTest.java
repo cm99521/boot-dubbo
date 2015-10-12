@@ -22,7 +22,7 @@ public class TrainingTest {
 		System.out.println(ctx.getStartupDate());
 		UserService userService = ctx.getBean("userService", UserService.class);
 		while (true) {
-			List<User> users = userService.findAll();
+			List<User> users = userService.findAllUsers();
 			System.out.println("返回结果：" + "size:" + users.size());
 			try {
 				Thread.sleep(5000);

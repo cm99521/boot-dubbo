@@ -15,7 +15,7 @@ public class TrainingController {
 	
 	@RequestMapping("/hello")
 	public String hello(String name) {
-		System.out.println("==========" +  (userService == null) + userService.findAll().size());
+		System.out.println("==========" +  (userService == null) + userService.findAllUsers().size());
 		return "Hello: " + name;
 	}
 

@@ -23,11 +23,9 @@
 	</properties>
 	<modules>
 		<module>boot-dubbo-api</module>
-		<module>boot-dubbo-service</module>
-    <module>boot-dubbo-web</module>
-    <module>boot-dubbo-normal-client</module>
-    <module>boot-dubbo-simple</module>
-    <module>boot-dubbo-infrastructure</module>
-    <module>boot-dubbo-simple-client</module>
+	    <module>boot-dubbo-web</module>
+	    <module>boot-dubbo-normal-client</module>
+	    <module>boot-dubbo-simple</module>
+	    <module>boot-dubbo-simple-client</module>
 	</modules>
 </project>
