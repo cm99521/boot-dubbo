@@ -2,6 +2,7 @@ package boot.dubbo.api;
 
 import java.io.Serializable;
 
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
@@ -22,7 +23,17 @@ public class User implements Serializable {
 	 * 用户姓名
 	 */
 	private String name;
+	
+	public User(Integer id, String name){
+		this.id = id;
+		this.name=name;
+	}
+	
+	public User(){
+		
+	}
 
+	@XmlElement
 	public Integer getId() {
 		return id;
 	}
@@ -31,6 +42,7 @@ public class User implements Serializable {
 		this.id = id;
 	}
 
+	@XmlElement
 	public String getName() {
 		return name;
 	}
