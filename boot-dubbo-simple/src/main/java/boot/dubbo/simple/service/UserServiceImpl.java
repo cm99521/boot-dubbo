@@ -10,7 +10,7 @@ import boot.dubbo.api.UserService;
 
 import com.alibaba.dubbo.config.annotation.Service;
 
-@Service(protocol = { "dubbo", "rest", "webservice" })
+@Service(protocol = { "rest", "webservice", "rmi" })
 public class UserServiceImpl implements UserService {
 
 	private static Map<Integer, User> users = new ConcurrentHashMap<Integer, User>();

@@ -13,4 +13,5 @@
     <dubbo:protocol name="dubbo" />
     <dubbo:protocol name="rest" />
     <dubbo:protocol name="webservice" />
+    <dubbo:protocol name="rmi" />
 </beans>

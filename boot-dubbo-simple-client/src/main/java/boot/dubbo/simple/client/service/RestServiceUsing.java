@@ -8,11 +8,12 @@ import boot.dubbo.api.UserService;
 import com.alibaba.dubbo.config.annotation.Reference;
 
 @Service
-public class UserServiceUsing {
+public class RestServiceUsing {
 	@Reference(protocol="rest")
 	private UserService userService;
 	
 	public void test() {
+		while(true){
 		System.out.println("findAllUsers: " + userService.findAllUsers());
 		
 		Integer userIdFind = 1;
@@ -26,5 +27,13 @@ public class UserServiceUsing {
 		
 		Integer userIdDelete = 2;
 		System.out.println("findUser: " + userService.deleteUser(userIdDelete));
+		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		}
 	}
 }

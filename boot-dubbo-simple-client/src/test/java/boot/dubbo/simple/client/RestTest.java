@@ -6,17 +6,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import boot.dubbo.simple.client.service.UserServiceUsing;
+import boot.dubbo.simple.client.service.RestServiceUsing;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = ApplicationBootstrap.class)
-public class TrainingTest {
+public class RestTest {
 	
 	@Autowired
-	UserServiceUsing userServiceUsing;
+	RestServiceUsing restServiceUsing;
 	
 	@Test
 	public void test() {
-		userServiceUsing.test();
+		restServiceUsing.test();
 	}
 }

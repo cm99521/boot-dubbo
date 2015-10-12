@@ -5,7 +5,7 @@ import ws2j.userservice.UserService;
 import ws2j.userservice.UserServicePortType;
 
 
-public class WSConsumer {
+public class RMIConsumer {
 
 	public static void main(String[] args) throws Exception {
 		UserServicePortType userService = new UserService().getUserServicePort();

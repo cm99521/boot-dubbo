@@ -1,0 +1,1 @@
+ws2j 中的代码是由apache cxf bin/wsdl2java -p ws2j.userserice -d wsdl http://xxxx/xxx.wsdl 生成的
