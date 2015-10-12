@@ -10,7 +10,11 @@
 
    dubbo.io
    
-4. other useful website
+4. zookeeper download
+   
+   http://apache.fayea.com/zookeeper/
+   
+5. other useful website
 	http://www.ibm.com/developerworks/cn/opensource/os-cn-zookeeper/index.html
 	http://blog.csdn.net/wxwzy738/article/details/16330383
 	http://www.cnblogs.com/Javame/p/3632708.html
